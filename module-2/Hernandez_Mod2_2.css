@@ -1,0 +1,102 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font size for HTML and body */
+html, body {
+    font-size: 16px;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Container styling */
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold font weight */
+    text-align: center;
+    text-transform: uppercase; /* Make the h1 uppercase */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500; /* Medium font weight */
+    text-align: left;
+    padding-top: 15px; /* Top padding */
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Paragraph styling */
+p {
+    font-weight: 400; /* Normal font weight */
+    line-height: 1.4em; /* Line height for paragraphs */
+    margin-bottom: 15px;
+}
+
+/* Styling for the "intro" class (only for the first paragraph) */
+.intro {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    text-indent: 2em; /* Indent the first paragraph */
+}
+
+/* Styling for the "sentence" class */
+.sentence {
+    color: #d9534f;
+    font-weight: bold;
+    font-style: italic; /* Italic style for the sentence class */
+}
+
+/* Address styling */
+address {
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: center; /* Center the address text */
+}
+
+/* Styling for the horizontal line */
+hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Styling for the website link */
+a {
+    font-weight: bold;
+    font-size: 1.25em; /* Increase font size */
+    color: #4F3674; /* Purple color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for the website link */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    background-color: #D6A800; /* Background color on hover */
+}
+
+/* Visited state styling for the website link */
+a:visited {
+    color: #6a4c9c; /* Lighter purple for visited link */
+}
