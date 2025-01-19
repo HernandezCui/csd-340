@@ -1,0 +1,30 @@
+/* Apply styling to the container */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Style headings */
+h1, h2, h3, h4 {
+    background-color: #4CAF50; 
+    color: white;              
+    border: 1px solid #D6A800; 
+    padding: 10px;
+}
+
+/* Style for links */
+a {
+    color: #2E8B57;          
+    text-decoration: none;    
+}
+
+/* Change color on hover */
+a:hover {
+    color: #FF6347;   
+}
+
+/* Visited link color */
+a:visited {
+    color: #8B4513;   
+}
