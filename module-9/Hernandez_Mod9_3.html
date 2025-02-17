@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hernandez">
+    <meta name="description" content="Assignment 9.3 – JavaScript - Part 1">
+    <meta name="keywords" content="HTML, CSS, JavaScript, CSD 340, Bellevue University">
+    
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Hernandez_Mod9_3.css">
+
+    <script>
+        var firstWord = "courage";
+        var secondWord = "friendship";
+        var thirdWord = "perseverance";
+        var fourthWord = "victory";
+    </script>
+</head>
+
+<body>
+    <!-- Container div for styling -->
+    <div id="container">
+
+        <!-- Main heading -->
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <!-- Chapter Title -->
+        <h2>A Tale of Triumph</h2>
+
+        <!-- Paragraph 1: Introduction (class="intro") -->
+        <p class="intro">In a small village surrounded by towering mountains, a young hero embarked on a journey filled with <span id="word1">_________</span> and <span id="word2">_________</span>. The path was fraught with challenges that required immense <span id="word3">_________</span>, but in the end, it led to ultimate <span id="word4">_________</span>.</p>
+
+        <button type="button" onclick="document.getElementById('word1').innerHTML = firstWord">Reveal Word 1</button>
+        <button type="button" onclick="document.getElementById('word2').innerHTML = secondWord">Reveal Word 2</button>
+        <button type="button" onclick="document.getElementById('word3').innerHTML = thirdWord">Reveal Word 3</button>
+        <button type="button" onclick="document.getElementById('word4').innerHTML = fourthWord">Reveal Word 4</button>
+
+        <p>With each step forward, the hero learned more about the power of determination and the strength that comes from unity.</p>
+
+        <!-- Horizontal Line -->
+        <hr />
+
+        <!-- Address information for Bellevue University -->
+        <address>
+            Bellevue University <br>
+            <a href="https://www.bellevue.edu">www.bellevue.edu</a> <br>
+            1000 Galvin Road South <br>
+            Bellevue, NE 68005
+        </address>
+    </div>
+</body>
+
+</html>
