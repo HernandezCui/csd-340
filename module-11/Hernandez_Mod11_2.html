@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        // Initialize an empty array
+        let entries = [];
+
+        // Function to add an element to the array
+        function addEntry() {
+            const inputBox = document.getElementById('inputBox');
+            const value = inputBox.value;
+
+            if (value.trim() !== "") {
+                entries.push(value);
+                alert(`Added: "${value}" at position ${entries.length}`);
+                inputBox.value = ""; // Clear the input box
+            } else {
+                alert("Please enter a valid value.");
+            }
+        }
+
+        // Function to delete the last element in the array
+        function deleteLastEntry() {
+            if (entries.length > 0) {
+                const removed = entries.pop();
+                alert(`Deleted last entry: "${removed}"`);
+            } else {
+                alert("No entries to delete.");
+            }
+        }
+
+        // Function to display the contents of the array
+        function displayEntries() {
+            if (entries.length > 0) {
+                const displayArea = document.getElementById('displayArea');
+                displayArea.innerHTML = entries.map((entry, index) => `${index + 1}. ${entry}`).join('<br>');
+            } else {
+                alert("No entries to display.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <input type="text" id="inputBox" placeholder="Enter a value" />
+    <button onclick="addEntry()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="displayEntries()">Display</button>
+
+    <div id="displayArea" style="margin-top: 20px; font-weight: bold;"></div>
+</body>
+</html>
