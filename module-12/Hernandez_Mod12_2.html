@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Hernandez_Mod12_2.css">
+    <script>
+        // JavaScript functions for sorting
+        const books = [
+            "The Hunger Games",
+            "The Shining",
+            "To Kill a Mockingbird",
+            "Harry Potter and the Sorcerer's Stone",
+            "The Green Mile",
+            "The Long Walk",
+            "Lord of the Rings",
+            "The Hobbit",
+            "Skeleton Crew",
+            "The Book Thief"
+        ];
+
+        function displayTopToBottom() {
+            const sortedBooks = books.slice().sort(); // Ascending order
+            displayBooks(sortedBooks);
+        }
+
+        function displayBottomToTop() {
+            const sortedBooks = books.slice().sort().reverse(); // Descending order
+            displayBooks(sortedBooks);
+        }
+
+        function displayBooks(sortedBooks) {
+            const listContainer = document.getElementById("book-list");
+            listContainer.innerHTML = ""; // Clear existing list
+            sortedBooks.forEach(book => {
+                const listItem = document.createElement("li");
+                listItem.textContent = book;
+                listContainer.appendChild(listItem);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        
+        <div class="side-by-side">
+            <div id="left-div">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id="book-list">
+                    <li>The Hunger Games</li>
+                    <li>The Shining</li>
+                    <li>To Kill a Mockingbird</li>
+                    <li>Harry Potter and the Sorcerer's Stone</li>
+                    <li>The Green Mile</li>
+                    <li>The Long Walk</li>
+                    <li>Lord of the Rings</li>
+                    <li>The Hobbit</li>
+                    <li>Skeleton Crew</li>
+                    <li>The Book Thief</li>
+                </ol>
+            </div>
+            
+            <div id="right-div">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                    <li>How to structure an HTML document</li>
+                    <li>CSS syntax and selectors</li>
+                    <li>Responsive web design principles</li>
+                    <li>How to apply styling to HTML elements</li>
+                    <li>Basic debugging and error-solving techniques</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="button-div">
+            <button onclick="displayTopToBottom()">Top to Bottom</button>
+            <button onclick="displayBottomToTop()">Bottom to Top</button>
+        </div>
+
+        <div id="bottom-div">
+            <a href="./index.html">Back to Index</a>
+        </div>
+    </div>
+</body>
+</html>
